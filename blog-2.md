@@ -4,7 +4,6 @@ Asynchronous programming is essential for building responsive applications, espe
 
 This guide explains how to handle asynchronous operations using `async/await` in TypeScript, offering a cleaner, more readable approach than traditional callbacks or promises.
 
-## Key Concepts
 
 ### What is a Promise?
 
@@ -27,4 +26,15 @@ To define an async function, use the `async` keyword before the function. An asy
 ```typescript
 async function fetchData(): Promise<string> {
     return "Data fetched";
+}
+
+
+# Awaiting Asynchronous Operations
+
+To wait for an asynchronous operation to complete, use `await` before the Promise. This pauses the execution of the function until the Promise resolves or rejects, allowing your code to run in a more synchronous style.
+
+```typescript
+async function getData():Promise<void> {
+    const data = await fetchData();
+    console.log(data); // Output: "Data fetched"
 }
