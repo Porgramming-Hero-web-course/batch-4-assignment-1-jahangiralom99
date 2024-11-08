@@ -2,9 +2,6 @@
 
 Asynchronous programming is essential for building responsive applications, especially when handling operations that take time, such as data fetching. In JavaScript and TypeScript, asynchronous operations are typically managed using callbacks, promises, or the `async/await` syntax.
 
-This guide explains how to handle asynchronous operations using `async/await` in TypeScript, offering a cleaner, more readable approach than traditional callbacks or promises.
-
-
 ### What is a Promise?
 
 A Promise is an object representing the eventual result of an asynchronous operation. Promises allow us to handle actions that take time in a structured way. A Promise can be in one of three states:
