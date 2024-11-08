@@ -30,18 +30,16 @@ const Promises = new Promise((resolve, reject) => {
 });
 
 
-
-```typescript
 async function fetchData(): Promise<string> {
     return "Data fetched";
 }
-
+````
 
 # Awaiting Asynchronous Operations
 
 To wait for an asynchronous operation to complete, use `await` before the Promise. This pauses the execution of the function until the Promise resolves or rejects, allowing your code to run in a more synchronous style.
 
- typescript
+```
 async function getData():Promise<void> {
     const data = await fetchData();
     console.log(data);
