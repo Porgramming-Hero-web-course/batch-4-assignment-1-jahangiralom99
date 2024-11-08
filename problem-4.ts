@@ -24,10 +24,10 @@ function calculateShapeArea(value: U): number {
   return 0;
 }
 
-const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
-const rectangleArea = calculateShapeArea({
-  shape: "rectangle",
-  width: 4,
-  height: 6,
-});
-console.log(circleArea, rectangleArea);
+// const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
+// const rectangleArea = calculateShapeArea({
+//   shape: "rectangle",
+//   width: 4,
+//   height: 6,
+// });
+// console.log(circleArea, rectangleArea);
